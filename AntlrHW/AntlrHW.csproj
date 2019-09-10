@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,8 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Antlr4 Include="Hello.g4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Antlr4.Runtime.Standard" Version="4.7.2" />
-    <PackageReference Include="Antlr4BuildTasks" Version="1.0.4" />
+    <PackageReference Include="Antlr4BuildTasks" Version="1.0.7" />
   </ItemGroup>
 
 </Project>
