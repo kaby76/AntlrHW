@@ -26,7 +26,8 @@ namespace AntlrHW
             var listener = new ErrorListener<IToken>();
             parser.AddErrorListener(listener);
             var tree = parser.r();
-            System.Console.WriteLine(listener.had_error ? "Didn't work" : "Worked");
+	    System.Console.WriteLine(listener.had_error ? "Fail" : "Pass");
+	    System.Console.WriteLine(tree.ToStringTree(parser));
         }
 
     }
